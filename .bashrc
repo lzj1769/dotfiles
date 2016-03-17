@@ -1,0 +1,24 @@
+source ~/.git-prompt.sh
+
+# PATH
+export PATH="/usr/local/sbin:$PATH"
+export PATH=$HOME/.composer/vendor/bin:$PATH
+
+# PS1
+export PS1='\[\e[0;90m\]\u \w$(__git_ps1)\[\e[0;0m\] \$ '
+
+# Editors
+export EDITOR='nano'
+
+# Aliases
+alias ..='cd ..'
+alias ls='ls -F -h'
+alias preview='open -a Preview'
+alias ping='ping -o'
+alias npmlist='npm list -g --depth=0'
+alias tinker='php artisan tinker'
+alias mjson='python -mjson.tool'
+
+# Completions
+. /usr/local/etc/bash_completion
+. /usr/local/etc/profile.d/z.sh

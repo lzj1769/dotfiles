@@ -1,0 +1,6 @@
+# Ignore case for tab completion
+set completion-ignore-case on
+
+# Shortcuts
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
