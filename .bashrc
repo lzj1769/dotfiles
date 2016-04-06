@@ -18,6 +18,7 @@ alias ping='ping -o'
 alias npmlist='npm list -g --depth=0'
 alias tinker='php artisan tinker'
 alias mjson='python -mjson.tool'
+alias rand='openssl rand -base64'
 
 # Completions
 . /usr/local/etc/bash_completion
