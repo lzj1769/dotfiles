@@ -23,3 +23,7 @@ alias rand='openssl rand -base64'
 # Completions
 . /usr/local/etc/bash_completion
 . /usr/local/etc/profile.d/z.sh
+
+# grep
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;32'
