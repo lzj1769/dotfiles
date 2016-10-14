@@ -2,7 +2,7 @@ source ~/.profile
 source ~/.git-prompt.sh
 
 # PS1
-export PS1='\[\e[0;90m\]\u \w$(__git_ps1)\[\e[0;0m\] \$ '
+export PS1='\[\e[38;5;240m\]\u \w$(__git_ps1)\[\e[0;0m\] \$ '
 
 # Editors
 export EDITOR=vim
