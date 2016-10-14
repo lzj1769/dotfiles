@@ -1,8 +1,5 @@
+source ~/.profile
 source ~/.git-prompt.sh
-
-# PATH
-export PATH="/usr/local/sbin:$PATH"
-export PATH=$HOME/.composer/vendor/bin:$PATH
 
 # PS1
 export PS1='\[\e[0;90m\]\u \w$(__git_ps1)\[\e[0;0m\] \$ '
@@ -27,9 +24,3 @@ alias rand='openssl rand -base64'
 # grep
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
-
-function colours {
-    for i in {0..255} ; do
-        printf "\x1b[38;5;${i}mcolour${i}\n"
-    done
-}
