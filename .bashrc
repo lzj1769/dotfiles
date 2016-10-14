@@ -8,7 +8,7 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 export PS1='\[\e[0;90m\]\u \w$(__git_ps1)\[\e[0;0m\] \$ '
 
 # Editors
-export EDITOR='nano'
+export EDITOR=vim
 
 # Aliases
 alias ..='cd ..'
