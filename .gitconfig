@@ -1,19 +1,11 @@
 [user]
-	name = Alex Hunt
+	signingkey = 7B78B3A2DCC8FF93
 	email = hello@alexhunt.io
-	signingkey = DCC8FF93
-[diff]
-	tool = diffmerge
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-[push]
-	default = simple
-[apply]
-	whitespace = nowarn
+	name = Alex Hunt
 [commit]
 	gpgsign = true
+[push]
+	default = simple
 [alias]
     s = status
     cm = commit
