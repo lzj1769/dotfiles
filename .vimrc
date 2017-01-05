@@ -4,6 +4,7 @@ so ~/.vim/plugins.vim
 
 syntax enable
 
+set noswapfile
 set mouse=a
 set so=999
 set nostartofline
