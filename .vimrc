@@ -23,6 +23,11 @@ set breakindent
 set backspace=indent,eol,start
 map <C-o> :NERDTreeToggle<CR>
 
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
+
 " Appearance "
 
 set title
@@ -31,6 +36,16 @@ set relativenumber
 set linespace=12
 
 colorscheme noctu
+
+" Search "
+
+set hlsearch
+set incsearch
+
+" Panes "
+
+set splitbelow
+set splitright
 
 " Statusline "
 
@@ -45,17 +60,8 @@ let g:lightline = {
   \     'subseparator': { 'left': '', 'right': '' }
   \ }
 
-" Search "
+" CtrlP "
 
-set hlsearch
-set incsearch
-
-" Panes "
-
-set splitbelow
-set splitright
-
-nmap <C-J> <C-W><C-J>
-nmap <C-K> <C-W><C-K>
-nmap <C-H> <C-W><C-H>
-nmap <C-L> <C-W><C-L>
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 0
