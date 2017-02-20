@@ -8,6 +8,7 @@ set noswapfile
 set mouse=a
 set so=999
 set nostartofline
+set clipboard=unnamed
 
 " Indentation "
 
