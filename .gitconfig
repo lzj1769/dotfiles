@@ -1,11 +1,16 @@
 [user]
-	signingkey = 7B78B3A2DCC8FF93
-	email = hello@alexhunt.io
-	name = Alex Hunt
-[commit]
-	gpgsign = true
+    name = Alex Hunt
+    email = hello@alexhunt.io
+    signingkey = DCC8FF93
+[diff]
+    tool = diffmerge
+    compactionHeuristic = true
 [push]
-	default = simple
+    default = simple
+[apply]
+    whitespace = nowarn
+[commit]
+    gpgsign = true
 [alias]
     s = status
     cm = commit
@@ -13,3 +18,5 @@
     ch = checkout
     a = add
     log = log --pretty=oneline
+[core]
+    excludesfile = ~/.gitignore
