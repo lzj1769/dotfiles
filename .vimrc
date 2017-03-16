@@ -16,7 +16,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set linebreak
-set breakindent 
+set breakindent
 
 " Bindings "
 
@@ -46,6 +46,9 @@ set incsearch
 
 set splitbelow
 set splitright
+
+" Command actions "
+autocmd BufWritePre * %s/\s\+$//e
 
 " Statusline "
 
