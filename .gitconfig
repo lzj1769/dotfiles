@@ -1,16 +1,11 @@
 [user]
     name = Alex Hunt
     email = hello@alexhunt.io
-    signingkey = DCC8FF93
-[diff]
-    tool = diffmerge
-    compactionHeuristic = true
-[push]
-    default = simple
-[apply]
-    whitespace = nowarn
+    signingkey = 7B78B3A2DCC8FF93
 [commit]
     gpgsign = true
+[push]
+    default = simple
 [alias]
     s = status
     cm = commit
