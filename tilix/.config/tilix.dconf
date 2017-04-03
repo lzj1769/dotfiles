@@ -1,0 +1,31 @@
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+foreground-color='#A7A7A7'
+visible-name='Default'
+dim-color-set=false
+login-shell=true
+palette=['#1E1E1E', '#CF6A4C', '#8F9D6A', '#F9EE98', '#7587A6', '#9B859D', '#AFC4DB', '#A7A7A7', '#5F5A60', '#CF6A4C', '#8F9D6A', '#F9EE98', '#7587A6', '#9B859D', '#AFC4DB', '#FFFFFF']
+badge-color-set=false
+default-size-rows=36
+default-size-columns=140
+show-scrollbar=false
+use-system-font=false
+cursor-colors-set=false
+highlight-colors-set=false
+use-theme-colors=false
+bold-color-set=false
+font='Native 9'
+terminal-bell='none'
+background-color='#1E1E1E'
+background-transparency-percent=6
+
+[/]
+sidebar-on-right=true
+auto-hide-mouse=true
+terminal-title-style='none'
+theme-variant='dark'
+session-name='${directory}'
+app-title='${id} - ${sessionName}'
+enable-wide-handle=false
+warn-vte-config-issue=false
+control-click-titlebar=true
+window-style='normal'
