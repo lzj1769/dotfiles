@@ -1,19 +1,9 @@
 # Dotfiles
 
-Personal user-level configuration files for Unix hosts.
+Personal configuration files for Unix hosts. Desktop preferences apply to [Xubuntu](http://xubuntu.org/).
 
-By no means yet a complete representation. I am also slowly improving at Vim.
+## Installation
 
-## Branches
+Files are organised by individual application, which can be selectively linked to the host home directory using the [GNU Stow](https://www.gnu.org/software/stow/) utility.
 
-#### [master](https://github.com/huntie/dotfiles/tree/master)
-
-Common command line preferences for the Bash shell and other Unix tools.
-
-#### [ubuntu](https://github.com/huntie/dotfiles/tree/ubuntu) (default)
-
-Additional desktop configuration and application settings for Ubuntu Linux. I am currently using [Xubuntu](http://xubuntu.org/) and the [Xfce](https://www.xfce.org/) desktop environment.
-
-#### [macos](https://github.com/huntie/dotfiles/tree/macos)
-
-Additional settings and command variants for my macOS device used at work.
+    stow git
