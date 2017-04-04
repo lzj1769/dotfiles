@@ -2,21 +2,36 @@ set nocompatible
 
 so ~/.vim/plugins.vim
 
-syntax enable
-
+set nobackup
+set nowb
 set noswapfile
+set noerrorbells
+
 set mouse=a
 set so=999
-set nostartofline
 set clipboard=unnamed
 
-" Indentation "
+" Appearance "
 
-set tabstop=4
-set shiftwidth=4
+syntax enable
+
+set title
+set number
+set relativenumber
+set linespace=12
+
+colorscheme noctu
+
+" File behaviour "
+
 set expandtab
+set smarttab
 set linebreak
 set breakindent
+set nostartofline
+
+set shiftwidth=4
+set tabstop=4
 
 " Bindings "
 
@@ -28,17 +43,9 @@ nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
-" Appearance "
-
-set title
-set number
-set relativenumber
-set linespace=12
-
-colorscheme noctu
-
 " Search "
 
+set smartcase
 set hlsearch
 set incsearch
 
@@ -48,7 +55,7 @@ set splitbelow
 set splitright
 
 " Command actions "
-autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//ge
 
 " Statusline "
 
