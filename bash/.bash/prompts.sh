@@ -1,5 +1,5 @@
 # Set window title
-export PROMPT_COMMAND='echo -ne "\033]0;$([ "$PWD" == "$HOME" ] && echo "$PWD" || echo "${PWD/#$HOME/~}") - $(basename $SHELL)\007"'
+export PROMPT_COMMAND='echo -ne "\033]0;$([ "$PWD" == "$HOME" ] && echo "$PWD" || echo "${PWD/#$HOME/\~}") - $(basename $SHELL)\007"'
 
 # PS1
 if [ -f ~/.git-prompt.sh ]; then
