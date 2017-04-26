@@ -15,5 +15,7 @@
     ch = checkout
     a = add
     log = log --pretty=oneline
+    undo = reset --soft HEAD^
+    stash-all = stash save --include-untracked
 [core]
     excludesfile = ~/.gitignore
