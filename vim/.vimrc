@@ -35,6 +35,7 @@ set tabstop=4
 
 " Bindings "
 
+map q <Nop>
 set backspace=indent,eol,start
 map <C-o> :NERDTreeToggle<CR>
 
