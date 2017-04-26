@@ -4,6 +4,8 @@
     signingkey = 7B78B3A2DCC8FF93
 [commit]
     gpgsign = true
+[status]
+    showUntrackedFiles = all
 [push]
     default = simple
 [alias]
