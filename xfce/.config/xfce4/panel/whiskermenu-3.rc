@@ -1,5 +1,4 @@
-favorites=exo-file-manager.desktop,exo-terminal-emulator.desktop,chromium-browser.desktop,slack.desktop,telegramdesktop.desktop,skypeforlinux.desktop,chrome-gaedmjdfmmahhbjefcbgaolhhanlaolb-Default.desktop,spotify.desktop,sublime_text.desktop,inkscape.desktop,steam.desktop
-recent=chrome-gaedmjdfmmahhbjefcbgaolhhanlaolb-Default.desktop,exo-terminal-emulator.desktop,exo-file-manager.desktop,xfce4-screenshooter.desktop,minecraft.desktop,menulibre.desktop,telegramdesktop.desktop,inkscape.desktop
+favorites=exo-file-manager.desktop,exo-terminal-emulator.desktop,chromium-browser.desktop,evolution.desktop,slack.desktop,skypeforlinux.desktop,chrome-gaedmjdfmmahhbjefcbgaolhhanlaolb-Default.desktop,spotify.desktop,sublime_text.desktop,inkscape.desktop,mscore.desktop,steam.desktop
 button-title=Applications
 button-icon=distributor-logo-ubuntu
 button-single-row=false
