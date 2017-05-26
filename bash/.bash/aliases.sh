@@ -2,6 +2,7 @@ alias ..='cd ..'
 alias ls='ls -F -h'
 alias rsync='rsync --progress'
 alias diff=colordiff
+alias grep='grep -n --color'
 alias npmlist='npm list -g --depth=0'
 alias tinker='php artisan tinker'
 alias mjson='python -mjson.tool'
