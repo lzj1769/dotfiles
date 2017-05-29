@@ -21,6 +21,7 @@ set relativenumber
 set linespace=12
 
 colorscheme noctu
+hi CursorLineNr ctermfg=White
 
 " File behaviour "
 
