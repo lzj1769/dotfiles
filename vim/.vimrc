@@ -16,6 +16,7 @@ set clipboard=unnamed
 syntax enable
 
 set title
+set titlestring=%F\ -\ vim
 set number
 set relativenumber
 set linespace=12
