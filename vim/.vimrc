@@ -67,10 +67,12 @@ set laststatus=2
 
 let g:lightline = {
   \     'active': {
-  \         'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ],
+  \         'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
   \         'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'fileencoding' ] ]
   \     },
-  \     'subseparator': { 'left': '', 'right': '' }
+  \     'component_function': {
+  \         'gitbranch': 'gitbranch#name'
+  \     }
   \ }
 
 " CtrlP "
