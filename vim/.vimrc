@@ -10,6 +10,7 @@ set noerrorbells
 set mouse=a
 set so=999
 set clipboard=unnamed
+set wildmenu
 
 " Appearance "
 
