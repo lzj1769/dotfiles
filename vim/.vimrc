@@ -24,6 +24,7 @@ set linespace=12
 
 colorscheme noctu
 hi CursorLineNr ctermfg=White
+hi MatchParen cterm=NONE ctermbg=black
 
 " File behaviour "
 
