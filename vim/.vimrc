@@ -1,5 +1,3 @@
-set nocompatible
-
 so ~/.vim/plugins.vim
 
 set nobackup
@@ -16,15 +14,21 @@ set wildmenu
 
 syntax enable
 
-set title
-set titlestring=%F\ -\ vim
+set background=dark
+colorscheme noctu
 set number
 set relativenumber
 set linespace=12
 
-colorscheme noctu
+set title
+set titlestring=%F\ -\ vim
+set statusline=%=%{gitbranch#name()}\ \ %f\ \ %l:%c\ %3p%%
+set laststatus=2
+
 hi CursorLineNr ctermfg=White
 hi MatchParen cterm=NONE ctermbg=black
+hi StatusLine ctermbg=NONE
+hi StatusLineNC ctermbg=NONE
 
 " File behaviour "
 
@@ -37,17 +41,6 @@ set nostartofline
 set shiftwidth=4
 set tabstop=4
 
-" Bindings "
-
-map q <Nop>
-set backspace=indent,eol,start
-map <C-o> :NERDTreeToggle<CR>
-
-nmap <C-J> <C-W><C-J>
-nmap <C-K> <C-W><C-K>
-nmap <C-H> <C-W><C-H>
-nmap <C-L> <C-W><C-L>
-
 " Search "
 
 set smartcase
@@ -59,23 +52,20 @@ set incsearch
 set splitbelow
 set splitright
 
+" Bindings "
+
+map q <Nop>
+set backspace=indent,eol,start
+map <C-o> :NERDTreeToggle<CR>
+
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
+
 " Command actions "
+
 autocmd BufWritePre * %s/\s\+$//ge
-
-" Statusline "
-
-set noshowmode
-set laststatus=2
-
-let g:lightline = {
-  \     'active': {
-  \         'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
-  \         'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'fileencoding' ] ]
-  \     },
-  \     'component_function': {
-  \         'gitbranch': 'gitbranch#name'
-  \     }
-  \ }
 
 " CtrlP "
 
