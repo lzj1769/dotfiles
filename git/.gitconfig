@@ -18,5 +18,6 @@
     log = log --pretty=oneline
     undo = reset --soft HEAD^
     unstage = reset HEAD
+    publish = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
 [core]
     excludesfile = ~/.gitignore
