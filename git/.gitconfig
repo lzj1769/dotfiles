@@ -10,12 +10,13 @@
     default = simple
 [alias]
     s = status
-    cm = commit
     d = diff
-    ch = checkout
+    dc = diff --cached
     a = add
+    cm = commit
+    ch = checkout
     log = log --pretty=oneline
     undo = reset --soft HEAD^
-    stash-all = stash save --include-untracked
+    unstage = reset HEAD
 [core]
     excludesfile = ~/.gitignore
