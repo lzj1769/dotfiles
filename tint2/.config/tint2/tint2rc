@@ -1,7 +1,7 @@
 # Background 1: Panel
 rounded = 0
 border_width = 0
-background_color = #000000 87
+background_color = #000000 88
 background_color_hover = #000000 60
 background_color_pressed = #000000 60
 
@@ -9,14 +9,14 @@ background_color_pressed = #000000 60
 rounded = 0
 border_width = 0
 background_color = #ffffff 0
-background_color_hover = #aaaaaa 22
+background_color_hover = #aaaaaa 8
 background_color_pressed = #555555 4
 
 # Background 3: Active task
 rounded = 0
 border_width = 0
-background_color = #777777 34
-background_color_hover = #aaaaaa 22
+background_color = #777777 16
+background_color_hover = #aaaaaa 8
 background_color_pressed = #555555 4
 
 # Background 4: Urgent task
@@ -30,7 +30,7 @@ background_color_pressed = #555555 4
 panel_items = TSC
 panel_size = 100% 30
 panel_margin = 0 0
-panel_padding = 2 0 2
+panel_padding = 0 0 0
 panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
@@ -40,7 +40,7 @@ panel_monitor = all
 
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_padding = 0 0 0
+taskbar_padding = 15 0 0
 taskbar_background_id = 0
 taskbar_active_background_id = 0
 taskbar_name = 0
@@ -51,23 +51,20 @@ taskbar_name_padding = 10 2
 taskbar_name_background_id = 0
 taskbar_name_active_background_id = 0
 taskbar_name_font = Native Bold 9
-taskbar_name_font_color = #e3e3e3 100
-taskbar_name_active_font_color = #ffffff 100
-taskbar_distribute_size = 0
-taskbar_sort_order = none
-task_align = center
+taskbar_name_font_color = #e3e3e3 95
+taskbar_name_active_font_color = #ffffff 95
 
 # Taskbar items
 task_text = 1
 task_icon = 0
 task_centered = 1
-task_maximum_size = 180 35
+task_maximum_size = 2000 35
 task_padding = 10 2 4
 task_font = Native 9
 task_tooltip = 0
 task_font_color = #ffffff 75
-task_active_font_color = #ffffff 100
-task_urgent_font_color = #333333 100
+task_active_font_color = #ffffff 95
+task_urgent_font_color = #333333 95
 task_background_id = 2
 task_active_background_id = 3
 task_urgent_background_id = 4
