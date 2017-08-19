@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal configuration files for Unix hosts. Desktop preferences apply to [Xubuntu](http://xubuntu.org/).
+Personal OS and Unix tool configuration files. Desktop preferences apply to [Xubuntu](http://xubuntu.org/).
 
 ## Installation
 
@@ -8,6 +8,6 @@ Files are organised by individual application, which can be selectively linked t
 
     stow -t ~/ git
 
-For applications that use dconf, settings can be selectively loaded.
+For applications that use dconf, settings can be loaded directly from the relevant file.
 
     dconf load / < gnome-terminal.dconf
