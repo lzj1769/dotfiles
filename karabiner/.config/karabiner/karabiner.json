@@ -1,0 +1,163 @@
+{
+    "global": {
+        "check_for_updates_on_startup": true,
+        "show_in_menu_bar": false,
+        "show_profile_name_in_menu_bar": false
+    },
+    "profiles": [
+        {
+            "name": "Default",
+            "selected": true,
+            "simple_modifications": {},
+            "complex_modifications": {
+                "parameters": {
+                    "basic.to_if_alone_timeout_milliseconds": 1000
+                },
+                "rules": [
+                    {
+                        "manipulators": [
+                            {
+                                "description": "home to left_command+left_arrow",
+                                "from": {
+                                    "key_code": "home",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "end to left_command+right_arrow",
+                                "from": {
+                                    "key_code": "end",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "left_option+tab to left_command+tab",
+                                "from": {
+                                    "key_code": "tab",
+                                    "modifiers": {
+                                        "mandatory": "left_option"
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "left_shift+insert to left_command+v",
+                                "from": {
+                                    "key_code": "insert",
+                                    "modifiers": {
+                                        "mandatory": "left_shift"
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": {},
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 628,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false,
+                    "fn_function_keys": {
+                        "f1": "display_brightness_decrement",
+                        "f10": "mute",
+                        "f11": "volume_decrement",
+                        "f12": "volume_increment",
+                        "f2": "display_brightness_increment",
+                        "f3": "mission_control",
+                        "f4": "vk_none",
+                        "f5": "illumination_decrement",
+                        "f6": "illumination_increment",
+                        "f7": "rewind",
+                        "f8": "play_or_pause",
+                        "f9": "fastforward"
+                    },
+                    "simple_modifications": {
+                        "fn": "left_command"
+                    }
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 320,
+                        "vendor_id": 9456
+                    },
+                    "ignore": false,
+                    "fn_function_keys": {
+                        "f1": "f1",
+                        "f10": "f10",
+                        "f11": "f11",
+                        "f12": "f12",
+                        "f2": "f2",
+                        "f3": "f3",
+                        "f4": "f4",
+                        "f5": "f5",
+                        "f6": "f6",
+                        "f7": "f7",
+                        "f8": "f8",
+                        "f9": "f9"
+                    },
+                    "simple_modifications": {
+                        "grave_accent_and_tilde": "non_us_backslash",
+                        "left_command": "left_control",
+                        "left_control": "left_command",
+                        "non_us_backslash": "grave_accent_and_tilde",
+                        "right_command": "right_control",
+                        "right_control": "right_command"
+                    }
+                }
+            ]
+        }
+    ]
+}
