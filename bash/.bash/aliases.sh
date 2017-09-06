@@ -8,3 +8,7 @@ alias tinker='php artisan tinker'
 alias mjson='python -mjson.tool'
 alias rand='openssl rand -base64'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+
+if [[ "$OSTYPE" = "Darwin"* ]]; then
+    alias tmux='tmux -f ~/.tmux-macos.conf'
+fi
