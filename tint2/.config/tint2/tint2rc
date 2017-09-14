@@ -2,29 +2,41 @@
 rounded = 0
 border_width = 0
 background_color = #000000 88
+border_color = #000000 0
 background_color_hover = #000000 60
+border_color_hover = #000000 0
 background_color_pressed = #000000 60
+border_color_pressed = #000000 0
 
 # Background 2: Default task, Iconified task
 rounded = 0
 border_width = 0
 background_color = #ffffff 0
+border_color = #000000 0
 background_color_hover = #aaaaaa 8
+border_color_hover = #000000 0
 background_color_pressed = #555555 4
+border_color_pressed = #000000 0
 
 # Background 3: Active task
 rounded = 0
 border_width = 0
 background_color = #777777 16
+border_color = #000000 0
 background_color_hover = #aaaaaa 8
+border_color_hover = #000000 0
 background_color_pressed = #555555 4
+border_color_pressed = #000000 0
 
 # Background 4: Urgent task
 rounded = 0
 border_width = 0
 background_color = #f3de48 88
+border_color = #000000 0
 background_color_hover = #f3de48 100
+border_color_hover = #000000 0
 background_color_pressed = #555555 4
+border_color_pressed = #000000 0
 
 # Panel
 panel_items = TSC
@@ -51,20 +63,23 @@ taskbar_name_padding = 10 2
 taskbar_name_background_id = 0
 taskbar_name_active_background_id = 0
 taskbar_name_font = Native Bold 9
-taskbar_name_font_color = #ffffff 75
-taskbar_name_active_font_color = #ffffff 95
+taskbar_name_font_color = #ffffff 73
+taskbar_name_active_font_color = #ffffff 93
+taskbar_distribute_size = 0
+taskbar_sort_order = none
+task_align = left
 
 # Taskbar items
 task_text = 1
-task_icon = 0
+task_icon = 1
 task_centered = 1
-task_maximum_size = 2000 35
-task_padding = 10 2 4
+task_maximum_size = 2000 30
+task_padding = 10 7 20
 task_font = Native 9
 task_tooltip = 0
-task_font_color = #ffffff 75
-task_active_font_color = #ffffff 95
-task_urgent_font_color = #333333 95
+task_font_color = #ffffff 73
+task_active_font_color = #ffffff 93
+task_urgent_font_color = #333333 93
 task_background_id = 2
 task_active_background_id = 3
 task_urgent_background_id = 4
@@ -86,7 +101,7 @@ systray_monitor = 1
 # Clock
 time1_format = %d %b %H:%M
 time1_font = Native Bold 9
-clock_font_color = #ffffff 75
+clock_font_color = #ffffff 73
 clock_padding = 20 0
 clock_background_id = 0
 clock_lclick_command = orage
