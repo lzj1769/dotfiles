@@ -1,2 +1,3 @@
 # Editor files
-*.sublime-*
+*.sublime-project
+*.sublime-workspace
