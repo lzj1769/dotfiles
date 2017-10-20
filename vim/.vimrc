@@ -63,10 +63,6 @@ nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
-" Command actions "
-
-autocmd BufWritePre * %s/\s\+$//ge
-
 " CtrlP "
 
 let g:ctrlp_show_hidden=1
