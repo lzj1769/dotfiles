@@ -57,17 +57,12 @@ set splitright
 map q <Nop>
 set backspace=indent,eol,start
 map <C-o> :NERDTreeToggle<CR>
+map ; :Files<CR>
 
 nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
-
-" CtrlP "
-
-let g:ctrlp_show_hidden=1
-let g:ctrlp_use_caching=1
-let g:ctrlp_clear_cache_on_exit=0
 
 " NERDTree "
 
