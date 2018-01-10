@@ -22,7 +22,7 @@ set linespace=12
 
 set title
 set titlestring=%F\ -\ vim
-set statusline=%=%{gitbranch#name()}\ \ %f\ \ %l:%c\ %3p%%
+set noshowmode
 set laststatus=2
 
 hi CursorLineNr ctermfg=White
@@ -63,6 +63,18 @@ nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
+
+" lightline "
+
+let g:lightline = {
+  \     'active': {
+  \         'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
+  \         'right': [['lineinfo'], ['percent'], ['gitbranch', 'fileformat', 'fileencoding']]
+  \     },
+  \     'component_function': {
+  \         'gitbranch': 'gitbranch#name'
+  \     }
+  \ }
 
 " NERDTree "
 
