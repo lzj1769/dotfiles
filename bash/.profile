@@ -1,5 +1,6 @@
 # Android SDK
 export ANDROID_HOME=~/Android/Sdk
+export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
 
 # PATH
 export PATH=$HOME/.local/bin:$PATH
