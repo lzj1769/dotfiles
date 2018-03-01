@@ -13,8 +13,9 @@
     d = diff
     dc = diff --cached
     a = add
-    cm = commit
+    c = commit
     ch = checkout
+    cp = cherry-pick
     log = log --pretty=oneline
     undo = reset --soft HEAD^
     unstage = reset HEAD
