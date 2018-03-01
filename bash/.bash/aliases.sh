@@ -19,4 +19,6 @@ if [[ "$OSTYPE" = "darwin"* ]]; then
     alias setclip=pbcopy
     alias getclip=pbpaste
     alias tmux='tmux -f ~/.tmux-macos.conf'
+else
+    alias open=xdg-open
 fi
