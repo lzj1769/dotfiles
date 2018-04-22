@@ -58,6 +58,7 @@ map q <Nop>
 set backspace=indent,eol,start
 map <C-o> :NERDTreeToggle<CR>
 map ; :Files<CR>
+map <Leader> <Plug>(easymotion-prefix)
 
 nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
