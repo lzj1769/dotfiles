@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal OS and Unix tool configuration files. Desktop preferences apply to [Xubuntu](http://xubuntu.org/).
+Personal OS and Unix tool configuration files.
 
 ## Installation
 
