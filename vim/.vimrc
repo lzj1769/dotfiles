@@ -14,8 +14,6 @@ set wildmenu
 
 syntax enable
 
-set background=dark
-colorscheme noctu
 set number
 set relativenumber
 set linespace=12
@@ -24,6 +22,11 @@ set title
 set titlestring=%F\ -\ vim
 set noshowmode
 set laststatus=2
+
+set background=dark
+colorscheme gruvbox
+let g:gruvbox_vert_split = 'bg1'
+let g:gruvbox_sign_column = 'bg0'
 
 hi CursorLineNr ctermfg=White
 hi MatchParen cterm=NONE ctermbg=black
