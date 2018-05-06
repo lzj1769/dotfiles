@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/vim-gitbranch'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
+Plugin 'bronson/vim-trailing-whitespace'
 
 call vundle#end()
 
