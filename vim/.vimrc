@@ -1,5 +1,3 @@
-so ~/.vim/plugins.vim
-
 set nobackup
 set nowb
 set noswapfile
@@ -24,9 +22,6 @@ set noshowmode
 set laststatus=2
 
 set background=dark
-colorscheme gruvbox
-let g:gruvbox_vert_split = 'bg1'
-let g:gruvbox_sign_column = 'bg0'
 
 hi CursorLineNr ctermfg=White
 hi MatchParen cterm=NONE ctermbg=black
@@ -68,7 +63,14 @@ nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
-" lightline "
+" Plugins "
+
+let g:gruvbox_vert_split = 'bg1'
+let g:gruvbox_sign_column = 'bg0'
+
+so ~/.vim/plugins.vim
+
+colorscheme gruvbox
 
 let g:lightline = {
   \     'active': {
@@ -79,7 +81,5 @@ let g:lightline = {
   \         'gitbranch': 'gitbranch#name'
   \     }
   \ }
-
-" NERDTree "
 
 let NERDTreeShowHidden=1
