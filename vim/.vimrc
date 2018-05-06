@@ -23,11 +23,6 @@ set laststatus=2
 
 set background=dark
 
-hi CursorLineNr ctermfg=White
-hi MatchParen cterm=NONE ctermbg=black
-hi StatusLine ctermbg=NONE
-hi StatusLineNC ctermbg=NONE
-
 " File behaviour "
 
 set expandtab
@@ -71,6 +66,7 @@ let g:gruvbox_sign_column = 'bg0'
 so ~/.vim/plugins.vim
 
 colorscheme gruvbox
+hi CursorLineNr ctermfg=white
 
 let g:lightline = {
   \     'active': {
