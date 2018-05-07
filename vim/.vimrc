@@ -4,6 +4,7 @@ set noswapfile
 set noerrorbells
 
 set mouse=a
+set ttymouse=xterm2
 set so=999
 set clipboard=unnamed
 set wildmenu
