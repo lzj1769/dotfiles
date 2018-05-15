@@ -12,13 +12,18 @@
     s = status
     d = diff
     dc = diff --cached
+    l = log
     a = add
     c = commit
+    ca = commit --amend
+    cn = commit --amend --no-edit
     ch = checkout
     cp = cherry-pick
-    log = log --pretty=oneline
-    undo = reset --soft HEAD^
+    undo = reset HEAD^
+    clean = reset HEAD --hard
     unstage = reset HEAD
+    discard = checkout --
+    pushf = push --force-with-lease
     publish = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
 [core]
     excludesfile = ~/.gitignore
