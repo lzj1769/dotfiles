@@ -51,6 +51,8 @@ set splitright
 map q <Nop>
 map ; :Files<CR>
 set backspace=indent,eol,start
+
+map <F6> :setlocal spell!<CR>
 map <C-o> :NERDTreeToggle<CR>
 
 map <Leader> <Plug>(easymotion-prefix)
