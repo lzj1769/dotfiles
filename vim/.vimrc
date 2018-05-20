@@ -49,15 +49,11 @@ set splitright
 " Bindings "
 
 map q <Nop>
+map ; :Files<CR>
 set backspace=indent,eol,start
 map <C-o> :NERDTreeToggle<CR>
-map ; :Files<CR>
-map <Leader> <Plug>(easymotion-prefix)
 
-nmap <C-J> <C-W><C-J>
-nmap <C-K> <C-W><C-K>
-nmap <C-H> <C-W><C-H>
-nmap <C-L> <C-W><C-L>
+map <Leader> <Plug>(easymotion-prefix)
 
 " Plugins "
 
