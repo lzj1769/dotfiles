@@ -20,7 +20,6 @@
     ch = checkout
     cp = cherry-pick
     undo = reset HEAD^
-    clean = reset HEAD --hard
     unstage = reset HEAD
     discard = checkout --
     pushf = push --force-with-lease
