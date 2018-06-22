@@ -3,23 +3,24 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'morhetz/gruvbox'
-Plugin 'reedes/vim-colors-pencil'
+
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'scrooloose/nerdtree'
+Plugin 'itchyny/vim-gitbranch'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
-Plugin 'tpope/vim-eunuch'
-Plugin 'w0rp/ale'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'itchyny/vim-gitbranch'
-Plugin 'tpope/vim-surround'
-Plugin 'mattn/emmet-vim'
-Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'junegunn/goyo.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'scrooloose/nerdtree'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-surround'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 
