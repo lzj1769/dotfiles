@@ -66,6 +66,7 @@ map <Leader> <Plug>(easymotion-prefix)
 
 let g:gruvbox_vert_split = 'bg1'
 let g:gruvbox_sign_column = 'bg0'
+let g:javascript_plugin_flow = 1
 
 so ~/.vim/plugins.vim
 
