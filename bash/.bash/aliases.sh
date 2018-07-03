@@ -16,6 +16,7 @@ alias rand='openssl rand -base64'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
 if [[ "$OSTYPE" = "darwin"* ]]; then
+    alias diff=icdiff
     alias setclip=pbcopy
     alias getclip=pbpaste
     alias tmux='tmux -f ~/.tmux-macos.conf'
