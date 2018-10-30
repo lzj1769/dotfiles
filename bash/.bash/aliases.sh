@@ -15,6 +15,9 @@ alias mjson='python -mjson.tool'
 alias rand='openssl rand -base64'
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
+# 'fuzzy edit': Open the file selected with fzf
+alias fe='${EDITOR} $(fzf)'
+
 if [[ "$OSTYPE" = "darwin"* ]]; then
     alias diff=icdiff
     alias setclip=pbcopy
