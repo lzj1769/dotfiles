@@ -9,6 +9,7 @@ alias diff=colordiff
 alias grep='grep -n --color'
 
 alias npmlist='npm list -g --depth=0'
+alias phpunit='./vendor/bin/phpunit --stop-on-fail --stop-on-error'
 alias tinker='php artisan tinker'
 alias emulator="$ANDROID_HOME/tools/emulator"
 alias mjson='python -mjson.tool'
