@@ -50,6 +50,10 @@ set incsearch
 set splitbelow
 set splitright
 
+" Filetype associations "
+
+au BufNewFile,BufRead *.fish set ft=fish
+
 " Bindings "
 
 map q <Nop>
