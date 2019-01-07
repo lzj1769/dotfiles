@@ -1,6 +1,19 @@
 set fish_greeting
 
-# Aliases
+# - Exports -
+
+set -x EDITOR vim
+
+# Repaint screen upon exiting less
+set -x LESS r
+
+# Highlight color for grep matches
+set -x GREP_COLOR '1;32'
+
+# Perform fzf searches using ag, with options
+set FZF_DEFAULT_COMMAND 'ag --hidden --depth=10 --ignore .git -f -g ""'
+
+# - Aliases -
 
 alias ls='ls -F -h'
 
