@@ -75,7 +75,14 @@ let g:javascript_plugin_flow = 1
 so ~/.vim/plugins.vim
 
 colorscheme gruvbox
+hi Normal ctermbg=NONE
 hi CursorLineNr ctermfg=white
+hi SignColumn ctermbg=NONE
+
+highlight GitGutterAdd ctermfg=green ctermbg=NONE
+highlight GitGutterChange ctermfg=yellow ctermbg=NONE
+highlight GitGutterDelete ctermfg=red ctermbg=NONE
+highlight GitGutterChangeDelete ctermfg=yellow ctermbg=NONE
 
 let g:lightline = {
   \     'active': {
