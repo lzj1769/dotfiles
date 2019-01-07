@@ -1,5 +1,12 @@
 set fish_greeting
 
+# - Colours -
+
+# Set true 256-color gruvbox colour palette for Vim theme
+if [ -d ~/.vim/bundle/gruvbox ]
+    source ~/.vim/colors/gruvbox_256palette.fish
+end
+
 # - Exports -
 
 set -x EDITOR vim
