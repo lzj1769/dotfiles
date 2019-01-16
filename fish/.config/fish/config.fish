@@ -34,7 +34,6 @@ abbr -a -g npmlist 'npm list -g --depth=0'
 abbr -a -g phpunit './vendor/bin/phpunit --stop-on-fail --stop-on-error'
 abbr -a -g tinker 'php artisan tinker'
 abbr -a -g emulator "$ANDROID_HOME/tools/emulator"
-abbr -a -g mjson 'python -mjson.tool'
 abbr -a -g rand 'openssl rand -base64'
 
 if [ (uname) = 'Darwin' ]
