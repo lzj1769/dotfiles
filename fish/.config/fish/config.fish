@@ -9,40 +9,39 @@ end
 
 # - Exports -
 
-set -x EDITOR vim
+set -x -g EDITOR vim
 
 # Repaint screen upon exiting less
-set -x LESS r
+set -x -g LESS r
 
 # Highlight color for grep matches
-set -x GREP_COLOR '1;32'
+set -x -g GREP_COLOR '1;32'
 
 # Perform fzf searches using ag, with options
-set FZF_DEFAULT_COMMAND 'ag --hidden --depth=10 --ignore .git -f -g ""'
+set -x -g FZF_DEFAULT_COMMAND 'ag --hidden --depth=10 --ignore .git -f -g ""'
 
 # - Aliases -
 
-alias ls='ls -F -h'
+alias ls 'ls -F -h'
+alias diff colordiff
+alias grep 'grep -n --color'
 
-alias setclip='xclip -selection c'
-alias getclip='xclip -selection c -o'
+alias setclip 'xclip -selection c'
+alias getclip 'xclip -selection c -o'
 
-alias rsync='rsync --progress'
-alias diff=colordiff
-alias grep='grep -n --color'
-
-alias npmlist='npm list -g --depth=0'
-alias phpunit='./vendor/bin/phpunit --stop-on-fail --stop-on-error'
-alias tinker='php artisan tinker'
-alias emulator="$ANDROID_HOME/tools/emulator"
-alias mjson='python -mjson.tool'
-alias rand='openssl rand -base64'
+abbr -a -g rsync 'rsync --progress'
+abbr -a -g npmlist 'npm list -g --depth=0'
+abbr -a -g phpunit './vendor/bin/phpunit --stop-on-fail --stop-on-error'
+abbr -a -g tinker 'php artisan tinker'
+abbr -a -g emulator "$ANDROID_HOME/tools/emulator"
+abbr -a -g mjson 'python -mjson.tool'
+abbr -a -g rand 'openssl rand -base64'
 
 if [ (uname) = 'Darwin' ]
-    alias diff=icdiff
-    alias setclip=pbcopy
-    alias getclip=pbpaste
-    alias tmux='tmux -f ~/.tmux-macos.conf'
+    alias diff icdiff
+    alias setclip pbcopy
+    alias getclip pbpaste
+    alias tmux 'tmux -f ~/.tmux-macos.conf'
 else
-    alias open=xdg-open
+    alias open xdg-open
 end
