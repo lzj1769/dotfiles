@@ -41,6 +41,8 @@ if [ (uname) = 'Darwin' ]
     alias setclip pbcopy
     alias getclip pbpaste
     alias tmux 'tmux -f ~/.tmux-macos.conf'
+
+    abbr -a -g tower gittower
 else
     alias open xdg-open
 end
