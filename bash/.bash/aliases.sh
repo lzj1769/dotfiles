@@ -22,7 +22,6 @@ if [[ "$OSTYPE" = "darwin"* ]]; then
     alias diff=icdiff
     alias setclip=pbcopy
     alias getclip=pbpaste
-    alias tmux='tmux -f ~/.tmux-macos.conf'
     alias tower=gittower
 else
     alias open=xdg-open

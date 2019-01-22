@@ -40,7 +40,6 @@ if [ (uname) = 'Darwin' ]
     alias diff icdiff
     alias setclip pbcopy
     alias getclip pbpaste
-    alias tmux 'tmux -f ~/.tmux-macos.conf'
 
     abbr -a tower gittower
 else
