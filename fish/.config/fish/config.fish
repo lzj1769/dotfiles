@@ -41,6 +41,7 @@ if [ (uname) = 'Darwin' ]
     alias setclip pbcopy
     alias getclip pbpaste
 
+    abbr -a tldr 'tldr --platform linux'
     abbr -a tower gittower
 else
     alias open xdg-open
