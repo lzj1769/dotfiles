@@ -2,3 +2,6 @@
 *.sublime-project
 *.sublime-workspace
 .idea/
+
+# Node Version Manager
+.nvmrc
