@@ -101,5 +101,6 @@ let g:lightline = {
   \     }
   \ }
 
+let g:deoplete#enable_at_startup = 1
 let g:javascript_plugin_flow = 1
 let NERDTreeShowHidden = 1
