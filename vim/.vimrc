@@ -56,9 +56,10 @@ au BufNewFile,BufRead *.fish set ft=fish
 
 " Bindings "
 
+set backspace=indent,eol,start
+
 map q <Nop>
 map ; :Files<CR>
-set backspace=indent,eol,start
 
 map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
@@ -68,11 +69,17 @@ map <Leader> <Plug>(easymotion-prefix)
 
 " Plugins "
 
-let g:gruvbox_vert_split = 'bg1'
-let g:gruvbox_sign_column = 'bg0'
-let g:javascript_plugin_flow = 1
+" Install and run vim-plug on first run
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 so ~/.vim/plugins.vim
+
+let g:gruvbox_vert_split = 'bg1'
+let g:gruvbox_sign_column = 'bg0'
 
 colorscheme gruvbox
 hi Normal ctermbg=NONE
@@ -94,4 +101,5 @@ let g:lightline = {
   \     }
   \ }
 
-let NERDTreeShowHidden=1
+let g:javascript_plugin_flow = 1
+let NERDTreeShowHidden = 1
