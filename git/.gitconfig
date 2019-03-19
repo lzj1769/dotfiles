@@ -10,18 +10,15 @@
     default = simple
 [alias]
     s = status
+    l = log
     d = diff
     dc = diff --cached
-    l = log
     a = add
     c = commit
     ca = commit --amend
     cn = commit --amend --no-edit
     ch = checkout
     cp = cherry-pick
-    undo = reset HEAD^
-    unstage = reset HEAD
-    discard = checkout --
     pushf = push --force-with-lease
     publish = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
 [core]
