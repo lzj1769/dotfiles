@@ -37,6 +37,7 @@ abbr -a emulator "$ANDROID_HOME/tools/emulator"
 abbr -a rand 'openssl rand -base64'
 
 if [ (uname) = 'Darwin' ]
+    alias ls 'ls -F -h -G'
     alias diff icdiff
     alias setclip pbcopy
     alias getclip pbpaste
