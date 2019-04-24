@@ -1,4 +1,5 @@
 fisher.fish
 
 # Fisher-managed scripts
+__z*.fish
 nvm.fish
