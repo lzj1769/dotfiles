@@ -52,7 +52,8 @@ set splitright
 
 " Filetype associations "
 
-au BufNewFile,BufRead *.fish set ft=fish
+autocmd BufRead,BufNewFile *.fish set ft=fish
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 " Bindings "
 
