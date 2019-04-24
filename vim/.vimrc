@@ -55,6 +55,8 @@ set splitright
 autocmd BufRead,BufNewFile *.fish set ft=fish
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 
+autocmd FileType gitcommit setlocal spell
+
 " Bindings "
 
 set backspace=indent,eol,start
@@ -83,14 +85,18 @@ let g:gruvbox_vert_split = 'bg1'
 let g:gruvbox_sign_column = 'bg0'
 
 colorscheme gruvbox
+
 hi Normal ctermbg=NONE
 hi CursorLineNr ctermfg=white
 hi SignColumn ctermbg=NONE
 
-highlight GitGutterAdd ctermfg=green ctermbg=NONE
-highlight GitGutterChange ctermfg=yellow ctermbg=NONE
-highlight GitGutterDelete ctermfg=red ctermbg=NONE
-highlight GitGutterChangeDelete ctermfg=yellow ctermbg=NONE
+hi clear SpellBad
+hi SpellBad cterm=underline ctermfg=darkred
+
+hi GitGutterAdd ctermfg=green ctermbg=NONE
+hi GitGutterChange ctermfg=yellow ctermbg=NONE
+hi GitGutterDelete ctermfg=darkred ctermbg=NONE
+hi GitGutterChangeDelete ctermfg=yellow ctermbg=NONE
 
 let g:lightline = {
   \     'active': {
