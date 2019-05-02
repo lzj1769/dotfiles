@@ -4,7 +4,11 @@ set noswapfile
 set noerrorbells
 
 set mouse=a
-set ttymouse=xterm2
+
+if !has('nvim')
+    set ttymouse=xterm2
+endif
+
 set so=999
 set clipboard=unnamedplus
 set wildmenu
@@ -23,6 +27,7 @@ set linespace=12
 
 set title
 set titlestring=%F\ -\ vim
+set guicursor=
 set noshowmode
 set laststatus=2
 
