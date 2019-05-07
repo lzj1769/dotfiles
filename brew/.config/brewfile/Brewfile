@@ -1,10 +1,7 @@
 tapall rcmdnk/file
 
 tap homebrew/core
-tap homebrew/dupes
-tap homebrew/php
 tap homebrew/services
-tap homebrew/versions
 
 brew ansible
 brew awscli
@@ -43,7 +40,7 @@ brew tmux
 brew tree
 brew vim
 brew wget
-brew yarn --without-node
+brew yarn
 
 tap homebrew/cask
 
