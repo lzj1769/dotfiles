@@ -11,6 +11,10 @@ end
 
 set -x EDITOR vim
 
+if type -q nvim
+    set -x EDITOR nvim
+end
+
 # Repaint screen upon exiting less
 set -x LESS r
 
