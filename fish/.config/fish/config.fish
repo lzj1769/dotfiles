@@ -37,7 +37,6 @@ abbr -a rsync 'rsync --progress'
 abbr -a npmlist 'npm list -g --depth=0'
 abbr -a phpunit './vendor/bin/phpunit --stop-on-fail --stop-on-error'
 abbr -a tinker 'php artisan tinker'
-abbr -a emulator "$ANDROID_HOME/tools/emulator"
 abbr -a rand 'openssl rand -base64'
 
 if [ (uname) = 'Darwin' ]
