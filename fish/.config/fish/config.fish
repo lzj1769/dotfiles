@@ -13,6 +13,7 @@ set -x EDITOR vim
 
 if type -q nvim
     set -x EDITOR nvim
+    abbr -a vim nvim
 end
 
 # Repaint screen upon exiting less
@@ -32,6 +33,9 @@ alias grep 'grep -n --color'
 
 alias setclip 'xclip -selection c'
 alias getclip 'xclip -selection c -o'
+
+alias emulator {$ANDROID_HOME}/emulator/emulator
+abbr -a avd 'emulator -avd Pixel_2_XL_API_28'
 
 abbr -a rsync 'rsync --progress'
 abbr -a npmlist 'npm list -g --depth=0'
