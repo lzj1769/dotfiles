@@ -10,8 +10,8 @@ defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Reduce keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Disable automatic capitalisation
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
