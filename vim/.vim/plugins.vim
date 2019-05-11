@@ -22,19 +22,21 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 
-" Neovim plugins
-
-if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-elseif has('python3')
-    " Require if Vim has Python 3, and pynvim package installed:
-    "     pip3 install --user pynvim
+" deoplete.nvim (auto-completion)
+"
+" Require if Vim has Python 3, and pynvim package installed:
+"     pip3 install --user pynvim
+if has('python3')
     try
         python3 import pynvim
 
-        Plug 'Shougo/deoplete.nvim'
-        Plug 'roxma/nvim-yarp'
-        Plug 'roxma/vim-hug-neovim-rpc'
+        if has('nvim')
+            Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+        else
+            Plug 'Shougo/deoplete.nvim'
+            Plug 'roxma/nvim-yarp'
+            Plug 'roxma/vim-hug-neovim-rpc'
+        endif
     catch
     endtry
 endif
