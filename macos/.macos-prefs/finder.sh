@@ -4,6 +4,9 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Show path bar
 defaults write com.apple.finder ShowPathbar -bool true
 
+# Set default view style to Column View
+defaults write com.apple.Finder FXPreferredViewStyle clmv
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
