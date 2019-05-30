@@ -53,6 +53,7 @@ cask android-studio
 cask discord
 cask firefox
 cask gimp
+cask graphiql
 cask hyperswitch
 cask iterm2
 cask karabiner-elements
