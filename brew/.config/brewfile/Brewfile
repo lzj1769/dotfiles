@@ -59,6 +59,7 @@ cask iterm2
 cask karabiner-elements
 cask keybase
 cask musescore
+cask notion
 cask pocket-casts
 cask postico
 cask postman
