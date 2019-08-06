@@ -34,7 +34,6 @@ alias grep 'grep -n --color'
 alias setclip 'xclip -selection c'
 alias getclip 'xclip -selection c -o'
 
-alias emulator {$ANDROID_HOME}/emulator/emulator
 abbr -a avd 'emulator -avd Pixel_2_XL_API_28'
 
 abbr -a rsync 'rsync --progress'
