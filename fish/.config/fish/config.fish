@@ -34,8 +34,6 @@ alias grep 'grep -n --color'
 alias setclip 'xclip -selection c'
 alias getclip 'xclip -selection c -o'
 
-abbr -a avd 'emulator -avd Pixel_2_XL_API_28'
-
 abbr -a rsync 'rsync --progress'
 abbr -a npmlist 'npm list -g --depth=0'
 abbr -a phpunit './vendor/bin/phpunit --stop-on-fail --stop-on-error'
