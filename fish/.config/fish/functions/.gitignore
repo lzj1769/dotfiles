@@ -1,6 +1,7 @@
 fisher.fish
 
 # Fisher-managed scripts
+_pisces*.fish
 __z*.fish
 humanize_duration.fish
 nvm.fish
