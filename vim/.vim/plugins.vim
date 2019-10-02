@@ -11,9 +11,9 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
-Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'reedes/vim-colors-pencil'
 Plug 'scrooloose/nerdtree'
@@ -33,6 +33,7 @@ if has('python3')
 
         if has('nvim')
             Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+            Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
         else
             Plug 'Shougo/deoplete.nvim'
             Plug 'roxma/nvim-yarp'
