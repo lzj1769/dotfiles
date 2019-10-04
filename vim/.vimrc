@@ -62,6 +62,8 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 autocmd FileType gitcommit setlocal spell
 
+autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx undojoin | Neoformat
+
 " Bindings "
 
 set backspace=indent,eol,start
