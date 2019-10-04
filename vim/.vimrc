@@ -86,6 +86,7 @@ endif
 
 so ~/.vim/plugins.vim
 
+let g:gruvbox_termcolors=16
 let g:gruvbox_vert_split = 'bg1'
 let g:gruvbox_sign_column = 'bg0'
 
