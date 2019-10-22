@@ -17,6 +17,7 @@ set -x GREP_COLOR '1;32'
 
 # Perform fzf searches using ag, with options
 set -x FZF_DEFAULT_COMMAND 'ag --hidden --depth=10 --ignore .git -f -g ""'
+set -x FZF_DEFAULT_OPTS '--preview \'head -100 {}\''
 
 # fish fzf options
 set -x FZF_LEGACY_KEYBINDINGS 0
