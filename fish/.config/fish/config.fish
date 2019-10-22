@@ -18,6 +18,11 @@ set -x GREP_COLOR '1;32'
 # Perform fzf searches using ag, with options
 set -x FZF_DEFAULT_COMMAND 'ag --hidden --depth=10 --ignore .git -f -g ""'
 
+# fish fzf options
+set -x FZF_LEGACY_KEYBINDINGS 0
+set -x FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
+set -x FZF_OPEN_COMMAND $FZF_DEFAULT_COMMAND
+
 # - Aliases -
 
 alias ls 'ls -F -h'
