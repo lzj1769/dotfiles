@@ -26,6 +26,8 @@
     r3 = rebase HEAD~3 -i
     r4 = rebase HEAD~4 -i
     r5 = rebase HEAD~5 -i
+    dt = difftool --tool=vimdiff -y
+    dtc = dt --cached -y
 [core]
     excludesfile = ~/.gitignore
 [includeIf "gitdir:~/Development/unmind/"]
