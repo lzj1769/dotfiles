@@ -33,6 +33,7 @@ alias grep 'grep -n --color'
 alias setclip 'xclip -selection c'
 alias getclip 'xclip -selection c -o'
 
+abbr -a ywd 'pwd | setclip'
 abbr -a rsync 'rsync --progress'
 abbr -a npmlist 'npm list -g --depth=0'
 abbr -a phpunit './vendor/bin/phpunit --stop-on-fail --stop-on-error'
