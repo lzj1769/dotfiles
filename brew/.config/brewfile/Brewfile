@@ -8,6 +8,7 @@ brew ansible
 brew awscli
 brew bash
 brew bash-completion
+brew bat
 brew docker
 brew docker-compose
 brew ffmpeg
