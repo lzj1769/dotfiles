@@ -15,3 +15,6 @@ export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
 
 # fastlane (macOS)
 export PATH=$HOME/.fastlane/bin:$PATH
+
+# Local scripts
+export PATH=$HOME/.local/bin:$PATH
