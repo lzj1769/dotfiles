@@ -12,6 +12,7 @@ brew bat
 brew docker
 brew docker-compose
 brew ffmpeg
+brew findutils
 brew fish
 brew fzf
 brew ghc
