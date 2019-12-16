@@ -1,2 +1,3 @@
 --style=numbers,changes
---pager="less -r"
+--theme=Gruvbox-N
+--pager="less -rR"
