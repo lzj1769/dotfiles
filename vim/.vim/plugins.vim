@@ -37,6 +37,7 @@ if has('python3')
         if has('nvim')
             Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
             Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+            Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
         else
             Plug 'Shougo/deoplete.nvim'
             Plug 'roxma/nvim-yarp'
