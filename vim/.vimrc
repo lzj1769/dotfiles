@@ -2,6 +2,7 @@ set nobackup
 set nowb
 set noswapfile
 set noerrorbells
+set autoread
 
 set mouse=a
 
