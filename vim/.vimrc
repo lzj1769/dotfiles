@@ -76,7 +76,8 @@ map ; :Files<CR>
 map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
 
-map <Leader>r :NERDTreeFind<cr>
+nnoremap <Leader>r :NERDTreeFind<cr>
+nnoremap <Leader>s :ToggleWorkspace<CR>
 
 map <Leader> <Plug>(easymotion-prefix)
 
@@ -118,6 +119,7 @@ let g:lightline = {
   \     }
   \ }
 
+let g:workspace_session_disable_on_args = 1
 let g:deoplete#enable_at_startup = 1
 let g:javascript_plugin_flow = 1
 let NERDTreeShowHidden = 1
