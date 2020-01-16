@@ -77,6 +77,7 @@ map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
 
 nnoremap <Leader>r :NERDTreeFind<cr>
+nnoremap <Leader>R :NERDTreeToggle<cr>
 nnoremap <Leader>s :ToggleWorkspace<CR>
 
 map <Leader> <Plug>(easymotion-prefix)
