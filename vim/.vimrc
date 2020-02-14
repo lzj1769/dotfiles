@@ -71,7 +71,7 @@ autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx undojoin | Neoformat
 set backspace=indent,eol,start
 
 map q <Nop>
-map ; :Files<CR>
+map ; :GFiles<CR>
 
 map <F6> :setlocal spell!<CR>
 map <F12> :Goyo<CR>
